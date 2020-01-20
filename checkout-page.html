@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Home Coffee</title>
+  <link rel="icon" href="https://image.freepik.com/free-vector/coffee-fast-delivery-service-advertising-banner_82574-8758.jpg">
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/mdb.min.css" rel="stylesheet">
+ 
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Seymour+One&display=swap" rel="stylesheet">
+</head>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+  <div class="container">
+
+    
+    <a class="navbar-brand waves-effect" href="" target="_blank">
+      <strong class="blue-text">Home Coffee </strong>
+    </a>
+
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+   
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+     
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link waves-effect" href="">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect" href="#"  data-toggle="modal" data-target="#modalLoginForm">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect" href="#"  data-toggle="modal" id="logout">Logout</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link waves-effect" href="#"
+          data-toggle="modal" data-target="#modalRegisterForm">SignUp</a>
+        </li>
+      </ul>
+
+     
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link waves-effect">
+            <span class="badge red z-depth-1 mr-1"> 1 </span>
+            <i class="fas fa-shopping-cart"></i>
+            <span class="clearfix d-none d-sm-inline-block"> Cart </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.facebook.com" class="nav-link waves-effect" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/" class="nav-link waves-effect" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
+            target="_blank">
+            <i class=""></i>Uber Eats
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+
+<body class="grey lighten-3">
+
+
+    
+  <style>
+  .row{
+    margin-left: 50px;
+    
+  }
+  .spnew{
+    margin-right: 50px;
+    width: 400px;
+  }
+  h1{
+    padding:0px;
+    text-align: center;
+  }
+  
+  
+  </style>
+
+
+
+
+  
+<table style="width: 100%;">
+  <tr>
+    <td style="width:100%">
+      <!--Main layout-->
+     
+
+  
+      <main class="mt-5 pt-4">
+        <div class="container wow fadeIn">
+    
+          <!-- Heading -->
+        
+          <h1>Checkout Form</h1><br>
+        
+          
+            
+        
+        
+          <div class="row">
+    
+            
+            <div class="col-md-8 mb-4">
+    
+            
+              <div class="card">
+    
+              
+                <form class="card-body" id="modal-signup">
+    
+                
+                  <div class="row">
+    
+                 
+                    <div class="col-md-6 mb-2">
+    
+                      <!--firstName-->
+                     
+    
+                    </div>
+                   
+    
+                 
+                    <div class="col-md-6 mb-2">
+    
+                    
+                     
+                    </div>
+                 
+    
+                  </div>
+               
+                  <!--Username-->
+                  <div class="md-form input-group pl-0 mb-5" >
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control py-0" name="fname" placeholder="Person's name who waiting for delivery" aria-describedby="basic-addon1" required>
+                  </div>
+    
+                
+                  <!--address-->
+                  <div class="md-form mb-5">
+                    <input type="text" name="address" class="form-control" placeholder="Address" required>
+                    <label for="address" name=""></label>
+                  </div>
+                  <div class="md-form mb-5">
+                    <input type="text" name="email" class="form-control" placeholder="User Email" required>
+                    <label for="email" name=""></label>
+                  </div>
+    
+                  <!--address-2-->
+                  <div class="md-form mb-5">
+                    <input type="text" id="address-2" class="form-control" placeholder="Address 2" required>
+                    <label for="address-2" name="address2"  class=""> </label>
+                  </div>
+    
+                
+                  <div class="row">
+    
+                  
+                    <div class="col-lg-4 col-md-12 mb-4">
+    
+                      <label for="District">District</label><br>
+                    
+                      <select class="custom-select d-block w-100" name="district" id="District" required>
+                        <option value="">Choose...</option>
+                        <option value="colombo">Colombo</option>
+                        <option value="gampha">Gampha</option>
+                        <option value="kaluthara">Kaluthara</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a District.
+                      </div>
+    
+                    </div>
+                  
+                   
+                    <div class="col-lg-4 col-md-6 mb-4">
+    
+                    
+                   
+    
+                    </div>
+                  
+    
+                  
+                    <div class="col-lg-4 col-md-6 mb-4">
+    
+                      <label for="zip">Zip</label>
+                      <input type="text" class="form-control" name="zip" id="zip" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Zip code required.
+                      </div>
+    
+                    </div>
+                  
+                    <hr>
+
+                    <div class="custom-control custom-checkbox" id="cont" >
+                      <input type="checkbox" class="custom-control-input"  name="checkbox" value="shipping address is same" id="same-address" required>
+                      <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+                    </div>
+                    <style>
+                    #cont{
+                      height: 100px;
+                      width: 300px;
+
+                    }
+                    #const2{
+                      height: 100px;
+                      width: 400px;
+                      padding-bottom: 0px;
+                      
+                    }
+
+                    #check{
+                      margin:20px;
+                    }
+                    </style>
+      
+                    
+
+                    <div class="d-block my-3" id="const2">
+                      <div class="custom-control custom-radio">
+                        <input id="credit" name="paymentMethod" id="1" type="radio" value="credit" class="custom-control-input" checked required>
+                        <label class="custom-control-label" for="credit">Credit card</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="debit" name="paymentMethod" id="2" type="radio" value="debit" class="custom-control-input" required>
+                        <label class="custom-control-label" for="debit">Debit card</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="paypal" name="paymentMethod" id="3" type="radio" value="papal" class="custom-control-input" required>
+                        <label class="custom-control-label" for="paypal">Paypal</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="cc-name">Name on card</label>
+                        <input type="text" class="form-control" name="nameoncard" id="cc-name" placeholder="" required>
+                        <small class="text-muted">Full name as displayed on card</small>
+                        <div class="invalid-feedback">
+                          Name on card is required
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="cc-number">Credit card number</label>
+                        <input type="text" class="form-control" name="creditcardnum" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Credit card number is required
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">Expiration</label>
+                        <input type="text" class="form-control" name="expire" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Expiration date required
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">CVV</label>
+                        <input type="text" class="form-control" name="cvv" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Security code required
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="mb-8">
+                    <button class="btn btn-primary btn-lg btn-block" id="check"  type="submit">Continue to checkout</button>
+                  </div></td>
+                   
+                  
+ 
+  </form>
+ 
+
+</table>
+  
+            
+
+              
+
+              
+            
+
+      
+          </div>
+       
+        </div>
+       
+        
+     
+
+         
+      
+         
+          
+      
+         
+
+        </div>
+     
+      </div>
+ 
+
+    </div>
+  </main>
+ 
+
+  
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+   
+
+   
+
+  
+    <div class="footer-copyright py-3"><br>
+
+
+    
+
+     <section class="contact section-padding" id="contact">
+
+
+       <div class="contact-container">
+        <iframe class="contact-map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63374.46504859229!2d79.82239347910155!3d6.902075399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25963e050a91b%3A0xd65f4c78095fc693!2zTWl0c2kncyDigJxUaGUgQ29mZmVlIFNob3DigJ0!5e0!3m2!1sen!2slk!4v1579163153409!5m2!1sen!2slk"
+        width="50%" height="350" frameborder="0" align="Left" style="border:0;"  allowfullscreen=""></iframe>
+      
+      </div>
+     </section>
+     
+     </style>
+     <div class="write"> <table>
+      <tr>
+        <div class="writ2" >
+          Our Coffee Shop Open At 10.00a.m - 11.00p.m.<br><br>
+          We Are The Best Coffee Providers in Sri lanka
+          
+        </div>
+        <td> <u><b><h2>Support</h2></b></u></td>
+      
+      </tr>
+      <tr>  <td>Telephone number</td></tr>
+      <tr>  <td>0774680818</td></tr>
+      <tr>  <td>0332281063</td></tr>
+      <tr>  <td>0763246789</td></tr>
+    </table>
+    <div >
+   
+      <h4</h4><br>
+      <p</p>
+      <p></p>
+      <p></p>
+    </div>
+    <div>
+  <u> <b><h2>Address</h2></b></u>
+  N0:23,New Sarath Lane,<br>
+  Galle Road,
+  Colombo 03.
+  Our Delivey serviece is based on the Colombo and Mount Lavina.
+<br><br>
+  
+  
+
+    </div></div>
+
+    <style>
+      div.write{
+        font-family: 'Seymour One', sans-serif;
+        color: black;
+        text-align:left;
+      }
+      div.writ2{
+        font-family: 'Seymour One', sans-serif;
+        color: brown;
+        text-align:right;
+      }
+    </style>
+    
+    
+
+   
+
+  </footer>
+
+    
+    </div>
+    
+
+   
+  </footer>
+  
+ 
+  
+  <script type="text/javascript" src="./jasonn.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+ 
+  <script type="text/javascript" src="js/popper.min.js"></script>
+ 
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  
+  <script type="text/javascript">
+    
+    new WOW().init();
+  </script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCVb7UUqeb4tQPA-DaryGwJEHppo0-XrO8",
+    authDomain: "details-e98df.firebaseapp.com",
+    databaseURL: "https://details-e98df.firebaseio.com",
+    projectId: "details-e98df",
+    storageBucket: "details-e98df.appspot.com",
+    messagingSenderId: "1024674089135",
+    appId: "1:1024674089135:web:0edf7bae092eef087dac5a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth=firebase.auth();
+const db=firebase.firestore();
+
+</script>
+<script type="text/javascript" src="saveData.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Home Coffee</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+  <link rel="icon" href="https://image.freepik.com/free-vector/coffee-fast-delivery-service-advertising-banner_82574-8758.jpg">
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+  <link href="css/mdb.min.css" rel="stylesheet">
+ 
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Seymour+One&display=swap" rel="stylesheet">
+  <script src="/bootstrap-sweetalert-master/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/bootstrap-sweetalert-master/dist/sweetalert.css">
+
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .carousel {
+      height: 60vh;
+    }
+
+    @media (max-width: 740px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+ 
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+
+     
+      <a class="navbar-brand waves-effect" href="http://localhost:3000" target="_blank">
+       
+      
+        <strong class="blue-text">Home Coffee </strong>
+      </a>
+
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link waves-effect" href="">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#"  data-toggle="modal" data-target="#modalLoginForm">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#"  data-toggle="modal" id="logout">Logout</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#"
+            data-toggle="modal" data-target="#modalRegisterForm">SignUp</a>
+          </li>
+        </ul>
+
+       
+        <ul class="navbar-nav nav-flex-icons">
+          
+             <div class="cart-btn">
+              <li class="nav-item">
+                <a class="nav-link waves-effect">
+                  <span class="badge red z-depth-1 mr-1" id="a"> 0 </span>
+                
+                  <i class="fas fa-shopping-cart"></i>Cart
+             </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.facebook.com" class="nav-link waves-effect" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/" class="nav-link waves-effect" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://Ubereats.com" class="nav-link border border-light rounded waves-effect"
+              target="_blank">
+              <i class=""></i>Uber Eats
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+
+ 
+  <div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+
+   
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+   
+
+    <style>
+      #slide{
+        font-family: 'Sofia';
+        font-size: 22px;
+      }
+
+    
+    
+    
+    </style>
+
+    
+    <div class="carousel-inner" role="listbox" id="slide">
+
+    
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('https://c.ndtvimg.com/2018-09/2crujfh8_black-coffee_625x300_24_September_18.PNG'); background-repeat: no-repeat; background-size: cover;">
+
+         
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+           
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+            
+                <strong>Coffee Express</strong>
+              </h1>
+
+              
+              <p class="mb-4 d-none d-md-block">
+                <strong></strong>
+              </p>
+
+              
+            </div>
+         
+
+          </div>
+          
+
+        </div>
+      </div>
+      
+
+     
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://scdn.slashgear.com/wp-content/uploads/2019/07/coffee_main_envat-1280x720.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+         
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>COFFEE FOR LIFE</strong>
+              </h1>
+
+              <p>
+                <strong>Special coffee beans</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Serving quality coffee in all time. Enjoy great experience with us  </strong>
+              </p>
+
+             
+            </div>
+           
+
+          </div>
+          
+
+        </div>
+      </div>
+   
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://ohcoffee.org/wp-content/uploads/2019/09/OH-Coffee-WebsiteComp_v10-label.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+         
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+         
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>COFFEE FOR LIFE</strong>
+              </h1>
+
+              <p>
+                <strong>Serving the world best coffee</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>We import ingrediants from malesiya and blended it with high quality materials.</strong>
+              </p>
+
+             
+            </div>
+           
+
+          </div>
+          
+        </div>
+      </div>
+     
+
+    </div>
+   
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+   
+
+  </div>
+  
+  
+  <main>
+    <div class="container">
+
+    
+      <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
+
+       
+        <span class="navbar-brand">Categories:</span>
+
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home-page.html">All
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home-page1.html">Iced Beverages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home-page2.html">Tea Beverages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home-page3.html">Espresso</a>
+            </li>
+
+          </ul>
+         
+
+      </nav>
+    
+
+     
+           
+              <div class="products-center">
+                         
+         
+
+            </div>
+
+       
+
+          </div>
+        </div>
+
+
+     
+
+    </div>
+  </main>
+ 
+
+    
+   <div class="cart-overlay">
+     <div class="cart">
+       <span class="close-cart">
+         <i class="fas fa-window-close"></i>
+       </span>
+<h2>Your cart</h2>
+<div class="class-content">
+
+</div>
+<div class="cart-footer">
+  <h3>Your total:Rs.<span class="cart-total">0</span></h3>
+  <button class="clear-cart btn btn-primary" id="clear-cart">Clear Cart</button>
+  <button class="clear-cart btn btn-primary" id="check"  onclick="window.location.href ='http://127.0.0.1:5500/MY_DeliveryFinal/checkout-page.html';"> Move to the checkout </button>
+  
+  
+   
+   
+ 
+</div>
+     </div>
+   </div>
+   
+  
+</div>
+
+
+  </div>
+
+<!--cart-->
+
+     </div>
+   </div>
+
+
+
+  <!--Footer-->
+ 
+
+ 
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+   
+
+   
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3"><br>
+
+
+    
+
+     <section class="contact section-padding" id="contact">
+
+
+       <div class="contact-container">
+        <iframe class="contact-map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63374.46504859229!2d79.82239347910155!3d6.902075399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25963e050a91b%3A0xd65f4c78095fc693!2zTWl0c2kncyDigJxUaGUgQ29mZmVlIFNob3DigJ0!5e0!3m2!1sen!2slk!4v1579163153409!5m2!1sen!2slk"
+        width="50%" height="350" frameborder="0" align="Left" style="border:0;"  allowfullscreen=""></iframe>
+      
+      </div>
+     </section>
+     
+     </style>
+     <div class="write"> <table>
+      <tr>
+        <div class="writ2" >
+          Our Coffee Shop Open At 10.00a.m - 11.00p.m.<br><br>
+          We Are The Best Coffee Providers in Sri lanka
+          
+        </div>
+        <td> <u><b><h2>Support</h2></b></u></td>
+      
+      </tr>
+      <tr>  <td>Telephone number</td></tr>
+      <tr>  <td>0774680818</td></tr>
+      <tr>  <td>0332281063</td></tr>
+      <tr>  <td>0763246789</td></tr>
+    </table>
+    <div >
+   
+      <h4</h4><br>
+      <p</p>
+      <p></p>
+      <p></p>
+    </div>
+    <div>
+  <u> <b><h2>Address</h2></b></u>
+  N0:23,New Sarath Lane,<br>
+  Galle Road,
+  Colombo 03.
+  Our Delivey serviece is based on the Colombo and Mount Lavina.
+<br><br>
+  
+  
+
+    </div></div>
+
+    <style>
+      div.write{
+        font-family: 'Seymour One', sans-serif;
+        color: black;
+        text-align:left;
+      }
+      div.writ2{
+        font-family: 'Seymour One', sans-serif;
+        color: brown;
+        text-align:right;
+      }
+    </style>
+    
+    
+
+   
+
+  </footer>
+  <!--/.Footer-->
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+
+  <script src="./index.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./cart.js"></script>
+  <script type="text/javascript" src="./checkout.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- signup -->
+      
+        <div class="modal-body mx-3">
+          <form id="signup-form">
+            <div class="input-field">
+                      <i class="fas fa-user prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+            <input type="text" id="orangeForm-name" name="fname" class="form-control validate" required>
+           
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+            <input type="email" id="orangeForm-email" name="email" class="form-control validate" required>          
+          </div>
+  
+          <div class="input-field">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+            <input type="password" id="orangeForm-pass" name="pass" class="form-control validate" required>         
+          </div>
+  
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-deep-orange">Sign up</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+    </div>
+      <!-- End -->
+
+      
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <form id="login-form">
+        <div class="input-field">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          <input type="email" id="defaultForm-email" class="form-control validate" required>
+       
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          <input type="password" id="defaultForm-pass" class="form-control validate" required>
+          
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+      </div>
+    </form>
+    </div>
+  </div>
+  </div>
+  
+  
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCwRwTX7fCIYr4OOpETBbuZT7bThqZOUmY",
+    authDomain: "deliveryapp-17c9b.firebaseapp.com",
+    databaseURL: "https://deliveryapp-17c9b.firebaseio.com",
+    projectId: "deliveryapp-17c9b",
+    storageBucket: "deliveryapp-17c9b.appspot.com",
+    messagingSenderId: "139485138633",
+    appId: "1:139485138633:web:fc5d86d8732aa2ebbec718"
+  };
+  // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+const auth=firebase.auth();
+const db=firebase.firestore();
+
+</script>
+<script src="signup.js"></script>
+<script src="jason.js"></script>
+<script  src="aa.json></script>
+</body>
+
+</html>
